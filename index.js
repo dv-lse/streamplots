@@ -1,5 +1,3 @@
-import '../css/styles.css!'
-
 d3.csv('./uk_tempa_by_year.csv', (err, raw_data) => {
 
   raw_data.forEach( (d) => { d.year = +d.year; d.temp = +d.temp })
